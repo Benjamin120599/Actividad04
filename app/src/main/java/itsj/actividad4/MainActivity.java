@@ -199,5 +199,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             et.setText("");
         }
     }
+    public void restablecerCheckBox(CheckBox...check) {
+        for(CheckBox checkBox : check){
+            checkBox.setChecked(false);
+        }
+    }
 
 }
