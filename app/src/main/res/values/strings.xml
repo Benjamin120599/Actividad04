@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Actividad4</string>
+
+    <string name="txt_lbl_titulo"> Convertir </string>
+    <string name="txt_lbl_indicacion"> A grados: </string>
+
+    <string name="txt_rbt_centigrados"> C° </string>
+    <string name="txt_rbt_fahrenheit"> F° </string>
+    <string name="txt_rbt_kelvin"> K°</string>
+    <string name="txt_rbt_rankine"> R° </string>
+
+</resources>
