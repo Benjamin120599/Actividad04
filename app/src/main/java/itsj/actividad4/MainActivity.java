@@ -186,5 +186,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         double celsius = (rankine - 491.67) / 1.8;
         return celsius;
     }
+    public double rankineToFahrenheit(double rankine) {
+        double fahrenheit = rankine - 459.67;
+        return fahrenheit;
+    }
 
 }
