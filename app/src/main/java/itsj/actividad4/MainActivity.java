@@ -46,7 +46,37 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         opcionK.setOnClickListener(this);
         opcionR = findViewById(R.id.checkBoxR);
         opcionR.setOnClickListener(this);
-
     }
+
+    @Override
+    public void onClick(View v) {
+        int evento = v.getId();
+        double grados = Double.parseDouble(cajaEntrada.getText().toString());
+        double res;
+
+        if(gradosC.isChecked()) {
+
+            if(opcionC.isChecked()){
+                cajaC.setText(grados+"");
+                limpiarCajas(cajaF, cajaK, cajaR);
+                restablecerCheckBox(opcionF, opcionK, opcionR);
+            } if(opcionF.isChecked()){
+                res = celsiusToFahrenheit(grados);
+                cajaF.setText(res+"");
+                limpiarCajas(cajaC, cajaK, cajaR);
+                restablecerCheckBox(opcionC, opcionK, opcionR);
+            } if(opcionK.isChecked()){
+                res = celsiusToKelvin(grados);
+                cajaK.setText(res+"");
+                limpiarCajas(cajaC, cajaF, cajaR);
+                restablecerCheckBox(opcionC, opcionF, opcionR);
+            } if(opcionR.isChecked()){
+                res = celsiusToRankine(grados);
+                cajaR.setText(res+"");
+                limpiarCajas(cajaC, cajaF, cajaK);
+                restablecerCheckBox(opcionC, opcionF, opcionK);
+            }
+
+        }
 
 }
