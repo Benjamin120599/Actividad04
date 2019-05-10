@@ -162,5 +162,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         double celsius = (fahrenheit - 32) / 1.8;
         return celsius;
     }
+    public double fahrenheitToKelvin(double fahrenheit) {
+        double kelvin = ( (fahrenheit - 32) / 1.8 ) + 273.15;
+        return kelvin;
+    }
+
 
 }
