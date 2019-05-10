@@ -194,6 +194,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         double kelvin = rankine/ 1.8;
         return kelvin;
     }
-
+    public void limpiarCajas(EditText...cajas) {
+        for(EditText et : cajas){
+            et.setText("");
+        }
+    }
 
 }
