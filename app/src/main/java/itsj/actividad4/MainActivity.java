@@ -78,5 +78,73 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
 
         }
+        if(gradosF.isChecked()){
+            if(opcionC.isChecked()){
+                res = fahrenheitToCelsius(grados);
+                cajaC.setText(res+"");
+                limpiarCajas(cajaF, cajaK, cajaR);
+                restablecerCheckBox(opcionF, opcionK, opcionR);
+            } if(opcionF.isChecked()){
+                cajaF.setText(grados+"");
+                limpiarCajas(cajaC, cajaK, cajaR);
+                restablecerCheckBox(opcionC, opcionK, opcionR);
+            } if(opcionK.isChecked()){
+                res = fahrenheitToKelvin(grados);
+                cajaK.setText(res+"");
+                limpiarCajas(cajaC, cajaF, cajaR);
+                restablecerCheckBox(opcionC, opcionF, opcionR);
+            } if(opcionR.isChecked()){
+                res = fahrenheitToRankine(grados);
+                cajaR.setText(res+"");
+                limpiarCajas(cajaC, cajaF, cajaK);
+                restablecerCheckBox(opcionC, opcionF, opcionK);
+            }
+        }
+        if(gradosK.isChecked()){
+            if(opcionC.isChecked()){
+                res = kelvinToCelsius(grados);
+                cajaC.setText(res+"");
+                limpiarCajas(cajaF, cajaK, cajaR);
+                restablecerCheckBox(opcionF, opcionK, opcionR);
+            } if(opcionF.isChecked()){
+                res = kelvinToFahrenheit(grados);
+                cajaF.setText(res+"");
+                limpiarCajas(cajaC, cajaK, cajaR);
+                restablecerCheckBox(opcionC, opcionK, opcionR);
+            } if(opcionK.isChecked()){
+                cajaK.setText(grados+"");
+                limpiarCajas(cajaC, cajaF, cajaR);
+                restablecerCheckBox(opcionC, opcionF, opcionR);
+            } if(opcionR.isChecked()){
+                res = kelvinToRankine(grados);
+                cajaR.setText(res+"");
+                limpiarCajas(cajaC, cajaF, cajaK);
+                restablecerCheckBox(opcionC, opcionF, opcionK);
+            }
+        }
+        if(gradosR.isChecked()){
+            if(opcionC.isChecked()){
+                res = rankineToCelsius(grados);
+                cajaC.setText(res+"");
+                limpiarCajas(cajaF, cajaK, cajaR);
+                restablecerCheckBox(opcionF, opcionK, opcionR);
+            } if(opcionF.isChecked()){
+                res = rankineToFahrenheit(grados);
+                cajaF.setText(res+"");
+                limpiarCajas(cajaC, cajaK, cajaR);
+                restablecerCheckBox(opcionC, opcionK, opcionR);
+            } if(opcionK.isChecked()){
+                res = rankineToKelvin(grados);
+                cajaK.setText(res+"");
+                limpiarCajas(cajaC, cajaF, cajaR);
+                restablecerCheckBox(opcionC, opcionF, opcionR);
+            } if(opcionR.isChecked()){
+                cajaR.setText(grados+"");
+                limpiarCajas(cajaC, cajaF, cajaK);
+                restablecerCheckBox(opcionC, opcionF, opcionK);
+            }
+        }
+    }
+
 
 }
