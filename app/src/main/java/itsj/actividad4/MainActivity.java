@@ -170,5 +170,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         double rankine = fahrenheit + 459.67;
         return rankine;
     }
+    public double kelvinToCelsius(double kelvin) {
+        double celsius = kelvin - 273.15;
+        return celsius;
+    }
 
 }
