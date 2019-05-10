@@ -154,5 +154,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         double kelvin = celsius + 273.15;
         return kelvin;
     }
-
+    public double celsiusToRankine(double celsius) {
+        double rankine = (celsius * 1.8) + 491.67;
+        return rankine;
+    }
 }
