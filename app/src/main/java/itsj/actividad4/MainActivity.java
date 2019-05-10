@@ -146,5 +146,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    public double celsiusToFahrenheit(double celsius) {
+        double fahrenheit = (celsius * 1.8) + 32;
+        return fahrenheit;
+    }
 
 }
