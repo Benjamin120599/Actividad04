@@ -9,5 +9,8 @@ import android.widget.RadioButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    RadioButton gradosC, gradosF, gradosR, gradosK;
+    EditText cajaEntrada, cajaC, cajaF, cajaR, cajaK;
+    CheckBox opcionC, opcionF, opcionR, opcionK;
 
 }
